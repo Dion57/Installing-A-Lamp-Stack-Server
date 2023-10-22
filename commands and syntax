@@ -1,0 +1,16 @@
+sudo apt update
+sudo apt install apache2 libapache2-mod-php8.1 -y
+sudo systemctl status apache2
+sudo ufw allow “Apache”
+sudo ufw reload
+http:://[server’s IP address]
+hostname -i
+sudo apt install php libapache2-mod-php php-mysql php-xml
+sudo apt install mariadb-server -y
+sudo systemctl status mariadb
+sudo systemctl enable mariadb
+sudo mysql_secure_installations
+sudo mariadb
+sudo nano /var/www/html/Dion.php
+sudo systemctl restart apache2
+http://[server-ip]/Dion.php
